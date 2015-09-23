@@ -1,39 +1,32 @@
-var app = angular.module("vacationChoiceApp", ['ngRoute']);
+var app = angular.module('vacationApp', ['ngRoute']);
 
 app.config(function($routeProvider){
- $routeProvider.when('/', {
-   templateUrl: 'partials/display-view.html',
-   controller: 'pictureCtrl'
- });
- 
- $routeProvider.when('/results-view', {
-   templateUrl: 'partials/results-view.html',
-   controller: 'resultsCtrl'
- });
-
- $routeProvider.otherwise('/');
-});
-
-app.controller('pictureCtrl', function(){
- 
-});
-
-app.controller('resultsCtrl', function(){
-
-
+	$routeProvider.when('/',
+		{
+			templateUrl: 'partials/travel-form.html',
+			controller: 'FormController'
+		});
+	$routeProvider.when('/result-view',
+		{
+			templateUrl: 'partials/result-view.html',
+			controller: 'ResultController'
+		});
+	$routeProvider.otherwise({redirectTo: '/',});
 });
 
 
-app.controller('FormController', ['$location', 'myService', function($location, myService) {
-    var self = this;
+app.controller('FormController', ['$location', 'travelService', function($location, travelService) {
+	var self = this;
 
-    self.add = function() {
-        myService.add({
-            name: this.name, 
-            location: this.location
-        });
-        self.name = '';
-        self.location = '';
-        $location.path('/results-view');
-    };
+	self.add = function() {
+		travelService.add({
+			name: this.name, 
+			destination: this.destination
+		});
+		self.name = '';
+		self.destination = '';
+		alert("Thank You! A travel consultant will contact you shortly");
+
+		$location.path('/result-view');
+	};
 }]);

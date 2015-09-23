@@ -1,0 +1,16 @@
+<h3>Join Our Other Travelers!</h3>
+
+<table ng-controller="ResultController as vm">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Destination</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="traveler in vm.list()">
+			<td>{{traveler.name}}</td>
+			<td>{{traveler.destination}}</td>
+		</tr>
+	</tbody>
+</table>
