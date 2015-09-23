@@ -22,3 +22,18 @@ app.controller('resultsCtrl', function(){
 
 
 });
+
+
+app.controller('FormController', ['$location', 'myService', function($location, myService) {
+    var self = this;
+
+    self.add = function() {
+        myService.add({
+            name: this.name, 
+            location: this.location
+        });
+        self.name = '';
+        self.location = '';
+        $location.path('/results-view');
+    };
+}]);

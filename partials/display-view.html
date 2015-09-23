@@ -1,13 +1,15 @@
-<ul>
-	<li><button type="radio">Los Angeles</button></li>
-	<li><button type="radio">New York</button></li>
-	<li><button type="radio">Shanghai</button></li>
-	<li><button type="radio">Tokyo</button></li>
-	<li><button type="radio">Miami</button></li>
+<ul ng-controller="FormController">
+	<input type="radio" ng-click="add()">Los Angeles</button>
+	<input type="radio" ng-click="add()">New York</button>
+	<input type="radio" ng-click="add()">Shanghai</button>
+	<input type="radio" ng-click="add()">Tokyo</button>
+	<input type="radio" ng-click="add()">Miami</button>
 </ul>
 
+<!--FORM SECTION-->
 <div>
-<form>
-<input type="text" placeholder="Your Name">
+ <form>
+	<input type="text" placeholder="Your Name">
+	<input type="date" name="daterange"/>
 </form>
 </div>
