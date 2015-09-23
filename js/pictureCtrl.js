@@ -14,7 +14,7 @@ app.directive('pictureBox', function(){
   
   return{
     restrict: "E",
-    template: '<div class="col-xs-3"><img class="img" ng-src={{contents.image}}><p class="text"> {{contents.caption}} </p></div>',
+    template: '<div class="col-xs-3"><img class="img" ng-src={{contents.image}}><p class="text"> {{contents.caption}}</p></div>',
     replace: false
   };
 
