@@ -31,3 +31,10 @@ body{
 .text {
 	color: white;
 }   
+
+form{
+    text-align: center;
+
+    padding: 15px;
+    max-width: 50%;
+}

@@ -1,28 +1,30 @@
-<form ng-controller="FormController as vm">
-	<div>
-		<label for="">Your Name</label>
-		<input type="text" placeholder="Your Name" ng-model="vm.name" ng-required="true">
-	</div>
+<form >
+	<div id="wrapper">
+		<div>
+			<label for="">Your Name</label>
+			<input type="text" placeholder="Your Name" ng-model="vm.name" ng-required="true">
+		</div>
+		<div>
+			<label for="">Your Destination</label>
+			<input type="text" placeholder="Your Destination" ng-model="vm.destination" ng-required="true">
+		</div>
 
-	<div>
-		<label for="">Your Destination</label>
-		<input type="text" placeholder="Your Destination" ng-model="vm.destination" ng-required="true">
-	</div>
+		<div>
+			<label for=""> Arrival: </label>
+	  		<input type="date" name="arrival">
+		</div>
 
-	<div>
-		<label for=""> Arrival: </label>
-  		<input type="date" name="arrival">
-	</div>
+		<div>
+			<label for="">Departure: </label>
+	  		<input type="date" name="departure">
+		</div>
 
-	<div>
-		<label for="">Departure: </label>
-  		<input type="date" name="departure">
-	</div>
+		<div>
+			<label for="">Your Contact Information</label>
+			<input type="text" placeholder="(555) 867-5309" ng-model="vm.phone" ng-required="true">
+		</div>
 
-	<div>
-		<label for="">Your Contact Information</label>
-		<input type="text" placeholder="(555) 867-5309" ng-model="vm.phone" ng-required="true">
+		<button type="submit" ng-click="vm.add()">Book Now!</button>
 	</div>
-
-	<button type="submit" ng-click="vm.add()">Book Now!</button>
 </form>
+

@@ -1,8 +1,8 @@
 app.factory('myService', [function() {
     var result = [
         { 
-        name: ,
-        location: 
+        name:"" ,
+        location: ""
         },
     ];
     

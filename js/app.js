@@ -4,7 +4,8 @@ app.config(function($routeProvider){
 	$routeProvider.when('/',
 		{
 			templateUrl: 'partials/travel-form.html',
-			controller: 'FormController'
+			controller: 'FormController', 
+			controllerAs: 'vm'
 		});
 	$routeProvider.when('/result-view',
 		{
@@ -25,8 +26,10 @@ app.controller('FormController', ['$location', 'travelService', function($locati
 		});
 		self.name = '';
 		self.destination = '';
-		alert("Thank You! A travel consultant will contact you shortly");
+		alert("Thank You! A travel consultant will contact you shortly.");
 
 		$location.path('/result-view');
 	};
 }]);
+
+
