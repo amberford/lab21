@@ -54,6 +54,10 @@ input{
     text-align: center;
 }
 
+marquee{
+       color:  #c0dfd9;
+
+}
 .img {
     position: relative;
     float: left;
@@ -66,6 +70,13 @@ input{
     border-radius: 50%;
     }
 
+.img2{
+    width:3%;
+    height: 3%;
+    float: right;
+    margin-right: 6%;
+    position: relative;
+}
 
 .picBox{
   float: left;
