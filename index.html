@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 21 | Angular App</title>
+	<title>TAAKKOCITY</title>
 	<link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">		
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+<header>TAAKKOCITY</header>
 </head>
 <body ng-app="vacationApp">
-
-	<a href="#/">HOME</a>
-	<a href="#/result-view">VACATION SELECTION</a>
-
+	<h3>"You'll never roam alone."</h3>
+	<!-- NAVIGATION -->
+	<div id="nav-wrapper">
+	<nav>
+		<a href="#/">HOME</a> |
+		<a href="#/result-view">YOUR TRIP</a>
+	</nav>
+	</div>
+<!-- TOP DESTINATIONS SECTION-->
+	<h1>This week's top destinations:</h1>
 		<div ng-controller="pictureCtrl">
 		<picture-box class="picBox" ng-repeat="contents in pictures"></picture-box>
 		</div>
 
+
+<!-- WEATHER SECTION -->
   <div ng-controller="weatherCtrl">
     <form>
 	    <div class="weather-form">	
-	    	<h3>Check the weather before you book your trip! Just Enter a Zip Code Below:</h3>
+	    	<h4>Check the weather at your destination! Just Enter a Zip Code Below:</h4>
 	      	<div class="form-group">
 	        	<input type="number" class="form-control" ng-model="zip" placeholder="e.g. 84105" />
 	        	<input type="submit" class="form-control" value="Search" ng-click="findWeather(zip)" />
@@ -29,7 +37,7 @@
   </div>
 
 
-		<ng-view></ng-view>
+	<ng-view></ng-view>
 
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
@@ -39,7 +47,12 @@
 	<script type="text/javascript" src="js/resultCtrl.js"></script>
 	<script type="text/javascript" src="js/weatherCtrl.js"></script>
 	<script type="text/javascript" src="js/service.js"></script>
+	<script type="text/javascript" src="js/ticker.js"></script>
 	<script type="text/javascript" src="js/weatherService.js"></script>
 	<script type="text/javascript" src="js/viewerService.js"></script>
 </body>
+
+<footer>&copy TAAKKOCITY 2015</footer>
+
+
 </html>

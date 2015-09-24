@@ -1,27 +1,75 @@
-@import url(https://fonts.googleapis.com/css?family=Handlee);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+header{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #7d4627;
+    text-align: center;
+}
+
+footer{
+    font-family: 'Quicksand', sans-serif;
+    color: #edd9c0;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+    clear: both;
+}
+
 body{
     background-image: url("../background.jpg");
-    font-family: 'Handlee';
+    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
+    text-align: center;
+
     }
 
- 
+a{
+    color: #7d4627;
+    font-weight: bold;
+}
+
+h1{
+    color: #edd9c0;
+    padding: 20px;
+    font-weight: bold;
+}
+
+h3{
+    color: #7d4627;
+    margin-bottom: 25px;
+}
+h4, p{
+    font-size: 24px;
+    color: #edd9c0;
+    margin-bottom: 25px;
+}
+
+button{
+    margin: 15px;
+}
+
+input{
+    text-align: center;
+}
+
 .img {
     position: relative;
     float: left;
-    width:  325px;
-    height: 325px;
+    width:  300px;
+    height: 300px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-    border: black solid 5px;
-    border-radius: 5px;
+    border:  #c0dfd9 solid 5px;
+    border-radius: 50%;
     }
 
 
 .picBox{
   float: left;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
 
 }
@@ -31,21 +79,31 @@ body{
 }   
 
 #page-wrap {
+    margin-top: 50px;
     float: right;
     padding: 20px;
-   background-color: rgba(255,255,255,0.6);
-
+    background-color: #c0dfd9;
 }
 
-form{
+.form{
     float: center;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
-    padding: 15px;
     max-width: 60%;
+    color: #7d4627;
+    clear: right;
+    position: relative;
 }
 
 .weather-form{
-    width: 60%;
+    margin-left: 25%;
+    margin-right: 25%;
+    float: center;
 }
 
+#nav-wrapper {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    background-color: #c0dfd9;
+}

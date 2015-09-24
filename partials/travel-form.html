@@ -1,27 +1,16 @@
-<form >
+<form class="form">
 	<div id="page-wrap">
 		<div class="form-group">
-			<label for="">Your Name:</label>
-			<input type="text" class="form-control" placeholder="Your Name" ng-model="vm.name" ng-required="true">
-		</div>
-		<div>
-			<label for="">Your Destination:</label>
-			<input type="text" class="form-control" placeholder="Your Destination" ng-model="vm.destination" ng-required="true">
-		</div>
-
-		<div>
-			<label for=""> Arrival:</label>
-	  		<input type="date" class="form-control" name="arrival">
-		</div>
-
-		<div>
+			<label for="">Name:</label>
+			<input type="text" class="form-control" placeholder="Enter your name" ng-model="vm.name" ng-required="true">
+			<label for="">Phone Number:</label>
+			<input type="text" class="form-control" placeholder="555-123-4567" ng-model="vm.phone" ng-required="true">
+			<label for="">Destination:</label>
+			<input type="text" class="form-control" placeholder="Where are you going?" ng-model="vm.destination" ng-required="true">
+			<label for="">Arrival:</label>
+	  		<input type="date" class="form-control" name="arrival" ng-model="vm.arrival" ng-required="true">
 			<label for="">Departure:</label>
-	  		<input type="date" class="form-control" name="departure">
-		</div>
-
-		<div>
-			<label for="">Your Contact Information:</label>
-			<input type="text" class="form-control" placeholder="(555) 867-5309" ng-model="vm.phone" ng-required="true">
+	  		<input type="date" class="form-control" name="departure" ng-model="vm.departure">
 		</div>
 
 		<button type="submit" ng-click="vm.add()">Book Now!</button>
